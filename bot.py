@@ -387,6 +387,18 @@ Choose an option below to get started:
                 'progress_hooks': [lambda d: asyncio.create_task(
                     self.youtube_progress_hook(d, progress_msg, chat_id)
                 )],
+                'headers': {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                    'AppleWebKit/537.36 (KHTML, like Gecko) '
+                    'Chrome/117.0 Safari/537.36'
+                },
+                'http_headers': {
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
+                    'AppleWebKit/537.36 (KHTML, like Gecko) '
+                    'Chrome/117.0 Safari/537.36'
+                },
+                'nocheckcertificate': True,
+                'ignoreerrors': True,
             }
             
             if format_type == 'audio':
